@@ -11,13 +11,14 @@
 
 <body>
     <header>
-
+        <h1>Chadwell's Fountain Pen</h1>
+        <h2>A Daily Journey</h2>
     </header>
     <main>
         <nav>
 
         </nav>
-        <h2>Daily Journal</h2>
+
         <section class="journalForm">
             <form action="">
                 <fieldset class="formFieldset">
@@ -25,26 +26,24 @@
                     <input type="date" name="journalDate" id="journalDate">
                 </fieldset>
                 <fieldset class="formFieldset">
-                    <label for="journalConcepts">Journal Concepts</label>
-                    <input type="text" name="journalConcepts" id="journalConcepts">
-                    </fieldset>
+                    <label for="journalConcepts" class="concepts">Journal Concepts</label>
+                    <input type="text" name="journalConcepts" id="journalConcepts" class="journalConcepts">
+                </fieldset>
                 <fieldset class="formFieldset">
                     <label for="journalEntry">Journal Entry</label>
-                    <input type="text" name="journalEntry" id="journalEntry">
+                    <textarea id="journalEntry" name="journalEntry" rows="6" cols="40"></textarea>
                 </fieldset>
                 <fieldset class="formFieldset">
                     <label for="journalMood">Mood o' Day</label>
-                    <select name="journalMood" id="journalMood">
+                    <select class="arrows" name="journalMood" id="journalMood">
                         <option value="Sunny">Sunny</option>
                         <option value="Partly Sunny">Partly Sunny</option>
                         <option value="Partly Cloudy">Partly Cloudy</option>
                         <option value="Overcast">Overcast</option>
                         <option value="Gloom and Doom">Gloom and Doom</option>
                     </select>
-
                 </fieldset>
                 <button> Record Journal Entry</button>
-
             </form>
 
         </section>
