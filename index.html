@@ -22,16 +22,20 @@
         <section class="journalForm">
             <form action="">
                 <fieldset class="formFieldset">
-                    <label for="journalDate">Date of Entry</label>
-                    <input type="date" name="journalDate" id="journalDate">
+                    <label for="date">Date of Entry</label>
+                    <input type="date" name="date" id="journalDate">
                 </fieldset>
                 <fieldset class="formFieldset">
-                    <label for="journalConcepts" class="concepts">Journal Concepts</label>
-                    <input type="text" name="journalConcepts" id="journalConcepts" class="journalConcepts">
+                    <label for="concepts" class="concepts">Journal Concepts</label>
+                    <input type="text" name="concepts" id="journalConcepts" class="text">
                 </fieldset>
                 <fieldset class="formFieldset">
-                    <label for="journalEntry">Journal Entry</label>
-                    <textarea id="journalEntry" name="journalEntry" rows="6" cols="40"></textarea>
+                    <label for="entry">Journal Entry</label>
+                    <textarea id="journalEntry" name="entry" rows="6" cols="40" class="text"></textarea>
+                </fieldset>
+                <fieldset class="formFieldset">
+                    <label for="quote">Today's Quote</label>
+                    <input type="text" name="quote" id="journalQuote"class="text">
                 </fieldset>
                 <fieldset class="formFieldset">
                     <label for="journalMood">Mood o' Day</label>
@@ -43,6 +47,7 @@
                         <option value="Gloom and Doom">Gloom and Doom</option>
                     </select>
                 </fieldset>
+
                 <button> Record Journal Entry</button>
             </form>
 
@@ -51,7 +56,7 @@
     <footer>
         &copy; Chadwell Clark ~ Nashville Software School ~ Cohort47
     </footer>
-
+    <script type="module" src="./scripts/main.js"></script>
 </body>
 
 </html>
