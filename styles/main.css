@@ -2,10 +2,12 @@
     box-sizing: border-box;
     margin:0;
     padding: 0;
+    font-size: 18;
 }
-header {
+header, footer {
     text-align: center;
     margin: 2rem 0 0 0;
+    padding:1rem;
     border: 2px rgba(139.3,139.3,139.3,.5) solid;
 }
 .journalForm {
@@ -15,7 +17,7 @@ header {
 }
 input{
     width: 200px;
-    border: hidden;
+    
     line-height: 2em;
 }
 fieldset {
@@ -51,11 +53,13 @@ select.arrows:focus {
   outline: 0;
 }
 
-.journalConcepts {
-    width: 600px;
+.text {
+    width: auto;
+    border:lightslategrey 2px solid ;
 }
 
 .formFieldset {
     display: flex;
     flex-direction: column;
+    font-size: 1.5rem;
 }
