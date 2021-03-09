@@ -3,18 +3,57 @@
     margin:0;
     padding: 0;
     font-size: 18;
+    letter-spacing:2px;
+    /* border: 1px black solid; */
+}
+.body-wrapper {
+    background: #f9f9ed;
+    height: 100vh;
+}
+header {
+    letter-spacing: 3px;
 }
 header, footer {
     text-align: center;
-    margin: 2rem 0 0 0;
-    padding:1rem;
+    margin: 0 0 0 0;
+    padding:3rem 0 3rem 0;
     border: 2px rgba(139.3,139.3,139.3,.5) solid;
+    background: #757083;
+    color: #f9f9ed;
+}
+.main {
+    background: #e9724c;
+    padding: 0 0 2rem 0;
 }
 .journalForm {
     margin: 2rem;
     padding: 2rem;
 
 }
+.navbar {
+    display: flex;
+    justify-content: space-evenly;
+    background: #474056;
+}
+
+button {
+    padding: .8rem;
+    width: 22%;
+    margin: 1rem;
+    border-radius: 12px;
+    outline: none;
+    font-size: 1.4rem;
+}
+.delete-edit {
+    background: #BC2C1A;
+}
+.addEntry {
+    background: #26A96C;
+}
+.calendar {
+    background: #5bc0eb
+}
+
 input{
     width: 200px;
     
@@ -32,7 +71,7 @@ select {
   border-radius: 4px;
   display: inline-block;
   font: inherit;
-  line-height: 1.5em;
+  line-height: 1.2em;
   width: 200px;
   padding: 0.5em 3.5em 0.5em 1em;
   -webkit-box-sizing: border-box;
@@ -52,10 +91,15 @@ select.arrows:focus {
   border-color: blue;
   outline: 0;
 }
-
+.journalForm {
+    background: #7d916e;
+    border-radius: 11px;
+    border: 3px solid #474056;
+}
 .text {
     width: auto;
     border:lightslategrey 2px solid ;
+    background: #f9f9ed;
 }
 
 .formFieldset {

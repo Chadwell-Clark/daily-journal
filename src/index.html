@@ -1,66 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/main.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/main.css" />
     <title>Daily Journal</title>
-</head>
+  </head>
 
-<body>
-    <header>
-        <h1>Chadwell's Fountain Pen</h1>
+  <body>
+    <div class="body-wrapper">
+      <header>
+        <h1>Chad[well]'s Fountain Pen</h1>
         <h2>A Daily Journey</h2>
-    </header>
-    <main>
-        <nav>
-
-        </nav>
+      </header>
+      <main class="main">
+        <div>
+          <nav class="navbar">
+            <button id="calendar" class="calendar">Calendar</button>
+            <button id="addSaveEntry" class="addEntry">Add Entry</button>
+            <button id="editDelete" class="delete-edit">Edit Entry</button>
+          </nav>
+        </div>
 
         <section class="journalForm">
-            <form action="">
-                <fieldset class="formFieldset">
-                    <label for="date">Date of Entry</label>
-                    <input type="date" name="date" id="journalDate">
-                </fieldset>
-                <fieldset class="formFieldset">
-                    <label for="concepts" class="concepts">Journal Concepts</label>
-                    <input type="text" name="concepts" id="journalConcepts" class="text">
-                </fieldset>
-                <fieldset class="formFieldset">
-                    <label for="entry">Journal Entry</label>
-                    <textarea id="journalEntry" name="entry" rows="6" cols="40" class="text"></textarea>
-                </fieldset>
-                <fieldset class="formFieldset">
-                    <label for="quote">Today's Quote</label>
-                    <input type="text" name="quote" id="journalQuote"class="text">
-                </fieldset>
-                <fieldset class="formFieldset">
-                    <label for="journalMood">Mood o' Day</label>
-                    <select class="arrows" name="journalMood" id="journalMood">
-                        <option value="Sunny">Sunny</option>
-                        <option value="Partly Sunny">Partly Sunny</option>
-                        <option value="Partly Cloudy">Partly Cloudy</option>
-                        <option value="Overcast">Overcast</option>
-                        <option value="Gloom and Doom">Gloom and Doom</option>
-                    </select>
-                </fieldset>
-                <button> Record Journal Entry</button>
-            </form>
+          <form action="">
+            <fieldset class="formFieldset">
+              <label for="date">Date of Entry</label>
+              <input type="date" name="date" id="journalDate" />
+            </fieldset>
+            <fieldset class="formFieldset">
+              <label for="concepts" class="concepts">Journal Concepts</label>
+              <input
+                type="text"
+                name="concepts"
+                id="journalConcepts"
+                class="text"
+              />
+            </fieldset>
+            <fieldset class="formFieldset">
+              <label for="entry">Journal Entry</label>
+              <textarea
+                id="journalEntry"
+                name="entry"
+                rows="6"
+                cols="40"
+                class="text"
+              ></textarea>
+            </fieldset>
+            <fieldset class="formFieldset">
+              <label for="quote">Today's Quote</label>
+              <input type="text" name="quote" id="journalQuote" class="text" />
+            </fieldset>
+            <fieldset class="formFieldset">
+              <label for="journalMood">Mood o' Day</label>
+              <select class="arrows" name="journalMood" id="journalMood">
+                <option value="Sunny">Sunny</option>
+                <option value="Partly Sunny">Partly Sunny</option>
+                <option value="Partly Cloudy">Partly Cloudy</option>
+                <option value="Overcast">Overcast</option>
+                <option value="Gloom and Doom">Gloom and Doom</option>
+              </select>
+            </fieldset>
+            <button>Record Journal Entry</button>
+          </form>
         </section>
         <section>
-            <div id="entryLog">
-
-            </div>
-
+          <div id="entryLog"></div>
         </section>
-    </main>
-    <footer>
-        &copy; Chadwell Clark ~ Nashville Software School ~ Cohort47
-    </footer>
-    <script type="module" src="./scripts/main.js"></script>
-</body>
+      </main>
+      <footer>
+        &copy; Chad[well] Clark ~ Nashville Software School ~ Cohort47
+      </footer>
+    </div>
+    <!-- end of body wrapper -->
 
+    <script type="module" src="./scripts/main.js"></script>
+  </body>
 </html>
