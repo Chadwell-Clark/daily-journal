@@ -3,11 +3,15 @@
     margin:0;
     padding: 0;
     font-size: 18;
-    border: 1px black solid;
+    letter-spacing:2px;
+    /* border: 1px black solid; */
 }
 .body-wrapper {
     background: #f9f9ed;
     height: 100vh;
+}
+header {
+    letter-spacing: 3px;
 }
 header, footer {
     text-align: center;
@@ -19,6 +23,7 @@ header, footer {
 }
 .main {
     background: #e9724c;
+    padding: 0 0 2rem 0;
 }
 .journalForm {
     margin: 2rem;
