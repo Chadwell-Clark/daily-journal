@@ -108,6 +108,10 @@ select.arrows:focus {
     flex-direction: column;
     font-size: 1.5rem;
 }
+.date-filter {
+    display:flex;
+    justify-content: space-between;
+}
 
 .journalEntry {
     margin: 1rem 2rem;
