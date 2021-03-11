@@ -4,7 +4,7 @@
     padding: 0;
     font-size: 18;
     letter-spacing:2px;
-    /* border: 1px black solid; */
+    border: 1px black solid;
 }
 .body-wrapper {
     background: #f9f9ed;
@@ -20,6 +20,7 @@ header, footer {
     border: 2px rgba(139.3,139.3,139.3,.5) solid;
     background: #757083;
     color: #f9f9ed;
+    font-size: 1.5rem;
 }
 .main {
     background: #e9724c;
@@ -36,7 +37,7 @@ header, footer {
     background: #474056;
 }
 
-button {
+nav button {
     padding: .8rem;
     width: 22%;
     margin: 1rem;
@@ -65,7 +66,7 @@ fieldset {
     border: 2px rgba(139.3,139.3,139.3,.5) solid;
     border-radius: 6px;
 }
-select {
+/* select {
   background-color: white;
   border: thin solid grey;
   border-radius: 4px;
@@ -90,7 +91,7 @@ select.arrows {
 select.arrows:focus {
   border-color: blue;
   outline: 0;
-}
+} */
 .journalForm {
     background: #7d916e;
     border-radius: 11px;
@@ -115,4 +116,36 @@ select.arrows:focus {
 }
 .journalEntry__title {
     padding: 1rem 0;
+}
+.mood__buttons {
+    display: flex;
+    justify-content: space-evenly;
+}
+.mood {
+    padding: .8rem;
+    width: 22%;
+    margin: 1rem;
+    border-radius: 12px;
+    outline: none;
+    font-size: 1.4rem;
+}
+.sunny {
+    background: rgb(240, 240, 118);
+    color: lightskyblue;
+}
+.partly-sunny {
+    background: rgb(240, 192, 104);
+    color: rgb(73, 117, 145);
+}
+.partly-cloudy {
+    background: rgb(190, 155, 90);
+    color: rgb(28, 39, 46);
+}
+.overcast {
+    background: rgb(97, 75, 34);
+    color: rgb(233, 157, 70);
+}
+.mordor {
+    background: rgb(49, 49, 34);
+    color:crimson;
 }

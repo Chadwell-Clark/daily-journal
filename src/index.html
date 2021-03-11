@@ -17,8 +17,8 @@
       <main class="main">
         <div>
           <nav class="navbar">
-            <button id="calendar" class="calendar">Calendar</button>
             <button id="addSaveEntry" class="addEntry">Add Entry</button>
+            <button id="calendar" class="calendar">Calendar</button>
             <button id="editDelete" class="delete-edit">Edit Entry</button>
           </nav>
         </div>
@@ -54,15 +54,36 @@
             </fieldset>
             <fieldset class="formFieldset">
               <label for="journalMood">Mood o' Day</label>
-              <select class="arrows" name="journalMood" id="journalMood">
+              <div class="mood__buttons">
+                <button type="submit" id="sunny" class="sunny mood">Sunny</button>
+                <button type="submit" id="partly-sunny" class="partly-sunny mood">
+                  Partly Sunny
+                </button>
+                <button type="submit" id="partly-cloudy" class="partly-cloudy mood">
+                  Partly Cloudy
+                </button>
+                <button type="submit" id="overcast" class="overcast mood">Overcast</button>
+                <button type="submit" id="mordor" class="mordor mood">Mordor</button>
+              </div>
+              <!-- <select class="arrows" name="journalMood" id="journalMood">
                 <option value="Sunny">Sunny</option>
                 <option value="Partly Sunny">Partly Sunny</option>
                 <option value="Partly Cloudy">Partly Cloudy</option>
                 <option value="Overcast">Overcast</option>
                 <option value="Gloom and Doom">Gloom and Doom</option>
-              </select>
+              </select> -->
             </fieldset>
-            <button>Record Journal Entry</button>
+            <fieldset class="formFieldset">
+              <label for="quoteofDay">Quote of the Day</label>
+              <textarea
+                id="qod"
+                name="quoteOfDay"
+                rows="3"
+                cols="40"
+                class="text"
+              ></textarea>
+            </fieldset>
+            <!-- <button>Record Journal Entry</button> -->
           </form>
         </section>
         <section>
