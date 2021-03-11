@@ -14,6 +14,26 @@ eventElement.addEventListener("click", event => {
     }
 })
 
+eventElement.addEventListener("click", (event) => {
+  console.log(event);
+  if (event.target.id === "sunny") {
+      event.preventDefault();
+    console.log("Sunny Mood");
+  } else if (event.target.id === "partly-sunny") {
+      event.preventDefault();
+    console.log("Partly Sunny Mood");
+  } else if (event.target.id === "partly-cloudy") {
+      event.preventDefault();
+    console.log("Partly Cloudy Mood");
+  } else if (event.target.id === "overcast") {
+      event.preventDefault();
+    console.log("Overcast Mood");
+  } else if (event.target.id === "mordor") {
+      event.preventDefault();
+    console.log("Mordor Mood");
+  }
+});
+
 const showEntryList = () => {
     const entryLog = document.querySelector("#entryLog");
     getJournalEntries().then((allEntries) => {
