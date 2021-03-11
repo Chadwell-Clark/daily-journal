@@ -1,4 +1,4 @@
-import { getJournalEntries } from "./data/JournalData.js";
+import { getJournalEntries, useJournalContents } from "./data/JournalData.js";
 import { EntryList } from "./feed/JournalEntryList.js";
 
 const eventElement =document.querySelector("main");
@@ -31,6 +31,20 @@ eventElement.addEventListener("click", (event) => {
   } else if (event.target.id === "mordor") {
       event.preventDefault();
     console.log("Mordor Mood");
+  }
+});
+
+eventElement.addEventListener("change", event => {
+  console.log(event);
+  if (event.target.value === "date") {
+    console.log("filter by date")
+  } else if (event.target.value === "mood") {
+    console.log("filter by mood");
+
+  } else if (event.target.value === "concept") {
+      console.log("filter by concept");
+  } else if (event.target.value === "random") {
+    console.log("filter by random");
   }
 });
 
