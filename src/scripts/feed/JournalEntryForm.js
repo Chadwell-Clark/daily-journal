@@ -1,30 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles/main.css" />
-    <title>Daily Journal</title>
-  </head>
-
-  <body>
-    <div class="body-wrapper">
-      <header>
-        <h1>Chad[well]'s Fountain Pen</h1>
-        <h2>A Daily Journey</h2>
-      </header>
-      <main class="main">
-        <div>
-          <nav class="navbar">
-            <button id="addSaveEntry" class="addEntry">Add Entry</button>
-            <button id="calendar" class="calendar">Calendar</button>
-            <button id="editDelete" class="delete-edit">Edit Entry</button>
-          </nav>
-        </div>
-
-        <section class="journalForm">
-          <form action="">
+export const JournalEntryForm = () => {
+    return `
+<form action="">
             <div class="date-filter">
             <fieldset class="formFieldset">
               <label for="date">Date of Entry</label>
@@ -110,17 +86,6 @@
             </fieldset>
             <!-- <button>Record Journal Entry</button> -->
           </form>
-        </section>
-        <section>
-          <div id="entryLog"></div>
-        </section>
-      </main>
-      <footer>
-        &copy; Chad[well] Clark ~ Nashville Software School ~ Cohort47
-      </footer>
-    </div>
-    <!-- end of body wrapper -->
+          `;
 
-    <script type="module" src="./scripts/main.js"></script>
-  </body>
-</html>
+};
