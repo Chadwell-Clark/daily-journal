@@ -63,6 +63,30 @@
       "quote": "&ltsideways&gt&lthuge&gt&ltlaser&gtPshew!&lt/laser&gt&lt/huge&gt&lt/sideways&gt -A.I. 'Bob' Dobbs-",
       "mood": "Partly Cloudy",
       "id": 8
+    },
+    {
+      "date": "2021-03-14",
+      "concept": "test",
+      "entry": "TTTEEESSSTTT",
+      "quote": "TeSt",
+      "mood": "sunny",
+      "id": 9
+    },
+    {
+      "date": "2021-03-14",
+      "concept": "Test 3",
+      "entry": "TEST 3",
+      "quote": "Test of the day # 3",
+      "mood": "sunny",
+      "id": 10
+    },
+    {
+      "date": "2021-03-14",
+      "concept": "Learning how not to do something",
+      "entry": "Just Follow directions. Do what is required and then screw it up on your own time.",
+      "quote": "Once a man has made a commitment to a way of life, he puts the greatest strength in the world behind him. It's something we call heart power. Once a man has made his commitment, nothing will stop him short of success. --Vince Lombardi--",
+      "mood": "sunny",
+      "id": 11
     }
   ]
 }

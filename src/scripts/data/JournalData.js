@@ -6,6 +6,8 @@
  *      the entries for different purposes.
  */
 
+// import { JournalEntryForm } from "../feed/JournalEntryForm";
+
 /*
  * 
  * @returns a copy of fetched data to limit redundant api calls
@@ -34,6 +36,17 @@ export const getJournalEntries = () => {
     journalContents = sortedByDate;
     return sortedByDate
   })
+};
+
+
+export const createJournalPost = (postEntry) => {
+  return fetch("http://localhost:8080/journalEntries", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(postEntry),
+  }).then(response => response.json());
 };
 
 

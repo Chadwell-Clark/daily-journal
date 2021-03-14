@@ -1,3 +1,5 @@
+//   ***  Function that returns Journal Entry form for insertion in the DOM  ***   //
+
 export const JournalEntryForm = () => {
     return `
 <form action="">

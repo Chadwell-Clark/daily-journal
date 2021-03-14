@@ -22,7 +22,8 @@ import { JournalEntryComponent } from "./JournalEntry.js";
 //   }
 // };
 
-
+//   ***  Function that returns a string of Journal Entry Objects passed
+//      ***     into it and prepares them for insertion into the DOM  ***   //
 export const EntryList = (allEntries) => {
   let entryHTML = "";
   for (const entry of allEntries) {

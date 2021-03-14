@@ -17,14 +17,14 @@
       <main class="main">
         <div>
           <nav class="navbar">
-            <button id="addSaveEntry" class="addEntry">Add Entry</button>
+            <button id="addSaveEntry" class="addEntry">Save Entry</button>
             <button id="calendar" class="calendar">Calendar</button>
-            <button id="editDelete" class="delete-edit">Edit Entry</button>
+            <button id="cancelDelete" class="cancelDelete">Cancel Entry</button>
           </nav>
         </div>
 
         <section class="journalForm">
-          <!-- <form action="">
+          <form action="">
             <div class="date-filter">
             <fieldset class="formFieldset">
               <label for="date">Date of Entry</label>
@@ -79,7 +79,19 @@
             </fieldset>
             <fieldset class="formFieldset">
               <label for="journalMood">Mood o' Day</label>
-              <div class="mood__buttons">
+              <div class="radio__mood">
+                <input type="radio" name="mood" class="sunny" id="sunny" value="sunny" >
+                <label for="sunny" class="sunny">Sunny</label>
+                <input type="radio" name="mood" class="sunny" id="partlySunny" value="partlySunny" >
+                <label for="partlySunny" class="partlySunny">Partly Sunny</label>
+                <input type="radio" name="mood" class="partlyCloudy" id="partlyCloudy" value="partlyCloudy" >
+                <label for="partlyCloudy" class="partlyCloudy">Partly Cloudy</label>
+                <input type="radio" name="mood" class="overcast" id="overcast" value="overcast">
+                <label for="overcast" class="overcast">Overcast</label>
+                <input type="radio" name="mood" class="mordor" id="mordor" value="mordor">
+                <label for="mordor" class="mordor">Mordor</label>
+              </div>
+              <!-- <div class="mood__buttons">
                 <button type="submit" id="sunny" class="sunny mood">Sunny</button>
                 <button type="submit" id="partly-sunny" class="partly-sunny mood">
                   Partly Sunny
@@ -89,7 +101,7 @@
                 </button>
                 <button type="submit" id="overcast" class="overcast mood">Overcast</button>
                 <button type="submit" id="mordor" class="mordor mood">Mordor</button>
-              </div>
+              </div> -->
              
             </fieldset>
             <fieldset class="formFieldset">
@@ -103,7 +115,7 @@
               ></textarea>
             </fieldset>
             
-          </form> -->
+          </form>
         </section>
         <section>
           <div id="entryLog"></div>
