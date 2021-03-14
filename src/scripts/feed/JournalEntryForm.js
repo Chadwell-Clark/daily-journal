@@ -1,30 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles/main.css" />
-    <title>Daily Journal</title>
-  </head>
+//   ***  Function that returns Journal Entry form for insertion in the DOM  ***   //
 
-  <body>
-    <div class="body-wrapper">
-      <header>
-        <h1>Chad[well]'s Fountain Pen</h1>
-        <h2>A Daily Journey</h2>
-      </header>
-      <main class="main">
-        <div>
-          <nav class="navbar">
-            <button id="addSaveEntry" class="addEntry">Save Entry</button>
-            <button id="calendar" class="calendar">Calendar</button>
-            <button id="cancelDelete" class="cancelDelete">Cancel Entry</button>
-          </nav>
-        </div>
-
-        <section class="journalForm">
-          <form action="">
+export const JournalEntryForm = () => {
+    return `
+<form action="">
             <div class="date-filter">
             <fieldset class="formFieldset">
               <label for="date">Date of Entry</label>
@@ -36,7 +14,7 @@
               <select name="filterBy" id="filterBy">
                 <option value="default">Filter By ...&nbsp&nbsp&nbsp&nbsp</option>
                 <option value="date">Date</option>
-                
+                <!-- <option value="mood">Mood</option> -->
                 <option value="concept">Concept</option>
                 <option value="random">Random</option>
               </select>
@@ -79,19 +57,7 @@
             </fieldset>
             <fieldset class="formFieldset">
               <label for="journalMood">Mood o' Day</label>
-              <div class="radio__mood">
-                <input type="radio" name="mood" class="sunny" id="sunny" value="sunny" >
-                <label for="sunny" class="sunny">Sunny</label>
-                <input type="radio" name="mood" class="sunny" id="partlySunny" value="partlySunny" >
-                <label for="partlySunny" class="partlySunny">Partly Sunny</label>
-                <input type="radio" name="mood" class="partlyCloudy" id="partlyCloudy" value="partlyCloudy" >
-                <label for="partlyCloudy" class="partlyCloudy">Partly Cloudy</label>
-                <input type="radio" name="mood" class="overcast" id="overcast" value="overcast">
-                <label for="overcast" class="overcast">Overcast</label>
-                <input type="radio" name="mood" class="mordor" id="mordor" value="mordor">
-                <label for="mordor" class="mordor">Mordor</label>
-              </div>
-              <!-- <div class="mood__buttons">
+              <div class="mood__buttons">
                 <button type="submit" id="sunny" class="sunny mood">Sunny</button>
                 <button type="submit" id="partly-sunny" class="partly-sunny mood">
                   Partly Sunny
@@ -101,8 +67,14 @@
                 </button>
                 <button type="submit" id="overcast" class="overcast mood">Overcast</button>
                 <button type="submit" id="mordor" class="mordor mood">Mordor</button>
-              </div> -->
-             
+              </div>
+              <!-- <select class="arrows" name="journalMood" id="journalMood">
+                <option value="Sunny">Sunny</option>
+                <option value="Partly Sunny">Partly Sunny</option>
+                <option value="Partly Cloudy">Partly Cloudy</option>
+                <option value="Overcast">Overcast</option>
+                <option value="Gloom and Doom">Gloom and Doom</option>
+              </select> -->
             </fieldset>
             <fieldset class="formFieldset">
               <label for="quoteofDay">Quote of the Day</label>
@@ -114,19 +86,8 @@
                 class="text"
               ></textarea>
             </fieldset>
-            
+            <!-- <button>Record Journal Entry</button> -->
           </form>
-        </section>
-        <section>
-          <div id="entryLog"></div>
-        </section>
-      </main>
-      <footer>
-        &copy; Chad[well] Clark ~ Nashville Software School ~ Cohort47
-      </footer>
-    </div>
-    <!-- end of body wrapper -->
+          `;
 
-    <script type="module" src="./scripts/main.js"></script>
-  </body>
-</html>
+};
