@@ -1,4 +1,6 @@
 import { getJournalEntries, useJournalContents } from "./data/JournalData.js";
+
+import { JournalEntryForm } from "./feed/JournalEntryForm.js";
 import { EntryList } from "./feed/JournalEntryList.js";
 
 const eventElement =document.querySelector("main");
@@ -50,6 +52,10 @@ eventElement.addEventListener("click", (event) => {
   }
 });
 
+const showJournalEntryForm =() => {
+  const journalFormDOMTarget =document.querySelector(".journalForm");
+  journalFormDOMTarget.innerHTML = JournalEntryForm();
+};
 
 const showEntryList = () => {
     const entryLog = document.querySelector("#entryLog");
@@ -59,6 +65,7 @@ const showEntryList = () => {
 };
 
 const startFountainPen = () => {
+    showJournalEntryForm();
     showEntryList();
 }
 
