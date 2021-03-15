@@ -41,7 +41,7 @@ header, footer {
 }
 
 nav button {
-    padding: .8rem;
+    padding: .6rem;
     width: 22%;
     margin: 1rem;
     border-radius: 11px;
@@ -60,15 +60,16 @@ nav button {
 
 .filter-search {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     background: #474056;
-    padding: 1rem;
+    padding: 1rem 3rem 1rem 3rem;
     
 }
 .search {
     border-radius: 8px;
     padding: 0 0 0 1rem;
     outline: none;
+    width:30%
 }
 
 select {
@@ -129,6 +130,7 @@ fieldset {
 .date-filter {
     display:flex;
     justify-content: space-between;
+
 }
 
 .journalEntry {
@@ -146,6 +148,7 @@ fieldset {
     padding: .4rem;
     border-radius: 8px;
     outline: none;
+    margin-top: .3rem;
 }
 /***   Mood Radio buttons   ***/
 
