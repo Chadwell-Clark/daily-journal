@@ -10,6 +10,7 @@
         <div>${entry.entry}</div>
         <div>${entry.mood}</div>
         <div>${entry.quote}</div>
+        <button class="edit" id="edit--${entry.id}"> Edit </button>
         </section>
      `)
  };
