@@ -1,6 +1,7 @@
 import { getJournalEntries, useJournalContents, createJournalPost } from "./data/JournalData.js";
 import { JournalEntryForm } from "./feed/JournalEntryForm.js";
 import { EntryList } from "./feed/JournalEntryList.js";
+import { NavBar } from "./feed/NavBar.js";
 
 //   ***  Variable to hold Event Element Target  ***   //
 const eventElement =document.querySelector("main");
@@ -98,6 +99,12 @@ eventElement.addEventListener("click", event => {
     }
   }); 
 
+//   ***  Function renders the NavBar to the DOM at #navbar  ***   //
+const showNavBar =() =>{
+  document.querySelector("#navbar").innerHTML = NavBar();
+}
+
+
 //   ***  Function renders Journal Entry Form to DOM at .journalForm  ***   //
 // const showJournalEntryForm =() => {
 //   const journalFormDOMTarget =document.querySelector(".journalForm");
@@ -114,6 +121,7 @@ const showEntryList = () => {
 
 //   ***  Function initates DOM rendering sequence  ***   //
 const startFountainPen = () => {
+  showNavBar();
     // showJournalEntryForm();
     showEntryList();
 }
