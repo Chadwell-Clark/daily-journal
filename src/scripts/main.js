@@ -1,4 +1,4 @@
-import { getJournalEntries, useJournalContents, createJournalPost } from "./data/JournalData.js";
+import { getJournalEntries, useJournalContents, createJournalPost, deleteEntry } from "./data/JournalData.js";
 import { JournalEntryForm } from "./feed/JournalEntryForm.js";
 import { EntryList } from "./feed/JournalEntryList.js";
 import { NavBar } from "./feed/NavBar.js";
@@ -13,8 +13,8 @@ eventElement.addEventListener("click", event => {
         console.log("Open Calendar");
     }else if(event.target.id === "addSaveEntry") {
         console.log("Save Entry");
-    } else if(event.target.id === "editDelete") {
-        console.log("Edit or Delete entry");
+    } else if(event.target.id === "edit") {
+        console.log("Edit entry");
     }
 })
 
@@ -90,10 +90,23 @@ eventElement.addEventListener("click", event => {
     }
 });
 
+eventElement.addEventListener("click", event => {
+  if(event.target.id.startsWith("delete")){
+    event.preventDefault();
+    const entryId = event.target.id.split("--")[1];
+    console.log("delete journal entry", entryId)
+    deleteEntry(entryId)
+    .then(response => {
+      console.log(response)
+      showEntryList();
+    })
+  }
+})
+
 //   ***  Click Event Handler for Journal Entry cancel 
 eventElement.addEventListener("click", event => {
     console.log(event);
-    if (event.target.id === "cancelDelete") {
+    if (event.target.id === "cancel") {
       console.log("cancel")
       // showJournalEntryForm();
     }

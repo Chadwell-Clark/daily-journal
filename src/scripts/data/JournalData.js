@@ -49,4 +49,17 @@ export const createJournalPost = (postEntry) => {
   }).then(response => response.json());
 };
 
-
+export const deleteEntry = (entryId) => {
+  console.log("delete >",entryId)
+  return fetch(`http://localhost:8080/journalEntries/${entryId}`, {
+    method: "DELETE",
+    headers: {
+      "Content-Type": "application/json"
+    }
+  })
+  .then(response => {
+    console.log("delete response",response)
+    response.json()
+  })
+  .then(getJournalEntries)
+}

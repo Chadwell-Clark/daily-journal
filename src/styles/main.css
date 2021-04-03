@@ -48,7 +48,7 @@ nav button {
     outline: none;
     font-size: 1.3rem;
 }
-.cancelDelete {
+.cancel {
     background: #BC2C1A;
 }
 .addEntry {
@@ -144,7 +144,7 @@ fieldset {
 .journalEntry__title {
     padding: 1rem 0;
 }
-.edit {
+.edit,.delete {
     padding: .4rem;
     border-radius: 8px;
     outline: none;
