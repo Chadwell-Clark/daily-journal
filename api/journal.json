@@ -74,19 +74,27 @@
     },
     {
       "date": "2021-03-14",
-      "concept": "Test 3",
-      "entry": "TEST 3",
-      "quote": "Test of the day # 3",
-      "mood": "sunny",
-      "id": 10
-    },
-    {
-      "date": "2021-03-14",
       "concept": "Learning how not to do something",
       "entry": "Just Follow directions. Do what is required and then screw it up on your own time.",
       "quote": "Once a man has made a commitment to a way of life, he puts the greatest strength in the world behind him. It's something we call heart power. Once a man has made his commitment, nothing will stop him short of success. --Vince Lombardi--",
       "mood": "sunny",
       "id": 11
+    },
+    {
+      "date": "2021-03-31",
+      "concept": "Array Methods",
+      "entry": "We worked on array methods such as map, includes, filter, find, every, forEach.\nOne thing that I am having trouble with is trying to string too many methods together and not returning in the right places. ALWAYS return if you have curly brackets.",
+      "quote": "Billionaire politics is about making human shields of the merely affluent. --Steve Randy Waldmen",
+      "mood": "sunny",
+      "id": 12
+    },
+    {
+      "date": "2021-04-03",
+      "concept": "Not April Fools",
+      "entry": "Still not April Fools",
+      "quote": "\"Men Have Forgotten God; That is why this has all happened.\" --Aleksandr Solzhenitsyn--",
+      "mood": "sunny",
+      "id": 13
     }
   ]
 }
