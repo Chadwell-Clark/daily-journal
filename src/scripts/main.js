@@ -90,6 +90,22 @@ eventElement.addEventListener("click", event => {
     }
 });
 
+// eventElement.addEventListener("click", event => {
+//   console.log(event.target.id)
+//   if(event.target.id.startswith("edit")){
+//     const entryId = event.target.id.split("__")[1];
+//     getSingleEntry(entryId)
+//     .then(response => {
+//       showEdit(response);
+//     })
+//   }
+// } )
+
+// const showEdit = (entryObj) => {
+//   const DOMTarget= document.querySelector(".");
+//   DOMTarget.innerHTML = PostEntry(entryObj)
+// }
+
 eventElement.addEventListener("click", event => {
   if(event.target.id.startsWith("delete")){
     event.preventDefault();
@@ -119,10 +135,10 @@ const showNavBar =() =>{
 
 
 //   ***  Function renders Journal Entry Form to DOM at .journalForm  ***   //
-// const showJournalEntryForm =() => {
-//   const journalFormDOMTarget =document.querySelector(".journalForm");
-//   journalFormDOMTarget.innerHTML = JournalEntryForm();
-// };
+const showJournalEntryForm =() => {
+  const journalFormDOMTarget =document.querySelector(".journalForm");
+  journalFormDOMTarget.innerHTML = JournalEntryForm();
+};
 
 //   ***  Function renders Journal Entries to DOM at #entryLog  ***  //
 const showEntryList = () => {
@@ -134,8 +150,8 @@ const showEntryList = () => {
 
 //   ***  Function initates DOM rendering sequence  ***   //
 const startFountainPen = () => {
+  showJournalEntryForm();
   showNavBar();
-    // showJournalEntryForm();
     showEntryList();
 }
 
