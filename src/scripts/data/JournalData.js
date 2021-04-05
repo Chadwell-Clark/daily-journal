@@ -63,3 +63,20 @@ export const deleteEntry = (entryId) => {
   })
   .then(getJournalEntries)
 }
+
+export const getSingleEntry = () => {
+  return fetch(`http://localhost:8080/journalEntries/${entryId}`)
+  .then(response => response.json())
+}
+
+export const updateEntry = (postEntry) => {
+  return fetch(`http://localhost:8080/journalEntries/${postEntry.id}`, {
+    method: "PUT",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify(postEntry)
+  })
+  .then(response => response.json())
+  .then(getJournalEntries)
+}
